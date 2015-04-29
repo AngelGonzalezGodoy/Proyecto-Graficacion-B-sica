@@ -27,6 +27,8 @@ public:
 
 private:
 	//animacion
+	GLint translate_menu_x;
+	GLint translate_menu_y;
 	GLint translate_nave_x;
 	GLint translate_nave_y;
 	GLfloat translate_nave_z;

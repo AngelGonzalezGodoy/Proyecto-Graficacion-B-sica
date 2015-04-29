@@ -53,7 +53,7 @@ void CGame::IniciandoVideo()
 
 void CGame::CargandoObjetos()
 {
-	menuFondo = new Sprite(&openGlImplement, "Menu", 0, 0);
+	menuFondo = new Sprite(&openGlImplement, "Menu", -500, 0);
 	textoTitulo = new Sprite(&openGlImplement, "Texto_Titulo", 0, 0);
 	textoNombre = new Sprite(&openGlImplement, "Texto_Nombre", 0, 0);
 	textoOpcion1 = new Sprite(&openGlImplement, "Texto_Opcion1", 0, 0);
@@ -61,7 +61,7 @@ void CGame::CargandoObjetos()
 	textoOpcion1Sel = new Sprite(&openGlImplement, "Texto_Opcion1Sel", 0, 0);
 	textoOpcion2Sel = new Sprite(&openGlImplement, "Texto_Opcion2Sel", 0, 0);
 	nave = new Nave(&openGlImplement, "MiNave", (WIDTH_SCREEN / 2), (HEIGHT_SCREEN - 80), NAVE_PROPIA);
-	jugandoFondo = new Sprite(&openGlImplement, "Jugando", 0, 0);
+	jugandoFondo = new Sprite(&openGlImplement, "Jugando", -500, 0);//aqui
 	ganasteFondo = new Sprite(&openGlImplement, "Ganaste", 0, 0);
 	perdisteFondo = new Sprite(&openGlImplement, "Perdiste", 0, 0);
 
@@ -213,6 +213,11 @@ void CGame::MoverEnemigo(){
 
 void CGame::JugandoPintar(){
 	jugandoFondo->Draw();
+	jugandoFondo->translate_x += 1;
+	if (jugandoFondo->translate_x>=4)
+	{
+		jugandoFondo->translate_x = -300;
+	}
 	////////////////////////////////////////
 	//////// CONTROL DE COLISIONES /////////
 	for (int i = 0; i < nivel[nivelActual].Enemigos_VisiblesAlMismoTiempo; i++)
@@ -329,6 +334,11 @@ void CGame::MenuActualizar()
 void CGame::MenuPintar()
 {
 	menuFondo->Draw();
+	menuFondo->translate_x += 1;
+	if (menuFondo->translate_x >= 4)
+	{
+		menuFondo->translate_x = -300;
+	}
 	textoTitulo->TranslateXYDraw(WIDTH_SCREEN / 8, 0);//<<<<<<< .mine
 	//animacion
 	//textoNombre->TranslateXYZ( WIDTH_SCREEN / 3, 450, -2.f);//570

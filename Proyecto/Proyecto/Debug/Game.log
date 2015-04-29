@@ -1,4 +1,4 @@
-﻿Compilación iniciada a las 4/25/2015 4:55:54 PM.
+﻿Compilación iniciada a las 4/28/2015 8:00:59 PM.
      1>Proyecto "C:\Users\Alejandro\Desktop\proy\trunk\Proyecto\Proyecto\Game.vcxproj" en el nodo 2 (Build destinos).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
@@ -6,7 +6,7 @@
          Game.cpp
      1>c:\users\alejandro\desktop\proy\trunk\proyecto\source\sprite.h(95): warning C4200: se ha utilizado una extensión no estándar : matriz de tamaño cero en struct/union
                  No se puede generar el constructor de copias o el operador de asignación de copias cuando el tipo definido por el usuario contiene una matriz de tamaño cero
-     1>c:\users\alejandro\desktop\proy\trunk\proyecto\source\game.cpp(335): warning C4244: 'argumento' : conversión de 'GLint' a 'GLfloat'; posible pérdida de datos
+     1>c:\users\alejandro\desktop\proy\trunk\proyecto\source\game.cpp(345): warning C4244: 'argumento' : conversión de 'GLint' a 'GLfloat'; posible pérdida de datos
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Alejandro\Desktop\proy\trunk\Proyecto\Proyecto\..\Ejecutable\Game.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\Alejandro\Desktop\proy\trunk\Proyecto\Proyecto\\..\Librerias\sdl2\lib\x86 SDL2.lib SDL2main.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Alejandro\Desktop\proy\trunk\Proyecto\Proyecto\..\Ejecutable\Game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Alejandro\Desktop\proy\trunk\Proyecto\Proyecto\..\Ejecutable\Game.lib" /MACHINE:X86 Debug\main.obj
          Debug\Game.obj
@@ -22,4 +22,4 @@
 
 Compilación correcta.
 
-Tiempo transcurrido 00:00:01.66
+Tiempo transcurrido 00:00:01.99
